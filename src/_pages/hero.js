@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import rightArrow from "./rightArrow.svg";
+import rightArrow from "_images/rightArrow.svg";
+import { colors } from "_constants/styleConstants";
 
 const Container = styled.div`
   background-color: black;
@@ -17,21 +18,21 @@ const MainText = styled.div`
 
 const SubText = styled.div`
   font-size: 16px;
-  color: gray;
+  color: ${colors.darkGray};
 `;
 
 const AddressRow = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-start;
-  color: gray;
+  color: ${colors.darkGray};
   margin-top: 20px;
 `;
 
 const AddressText = styled.input`
   width: 50%;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid ${colors.darkGray};
   background-color: black;
   margin-right: 30px;
 `;
