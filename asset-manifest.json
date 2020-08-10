@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/facecake/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/facecake/static/js/main.2e23eff9.chunk.js",
+    "main.js.map": "/facecake/static/js/main.2e23eff9.chunk.js.map",
+    "runtime-main.js": "/facecake/static/js/runtime-main.45518ebe.js",
+    "runtime-main.js.map": "/facecake/static/js/runtime-main.45518ebe.js.map",
+    "static/js/2.d6c7a77e.chunk.js": "/facecake/static/js/2.d6c7a77e.chunk.js",
+    "static/js/2.d6c7a77e.chunk.js.map": "/facecake/static/js/2.d6c7a77e.chunk.js.map",
+    "index.html": "/facecake/index.html",
+    "precache-manifest.5f5a7768adc61a111f07c5216d134436.js": "/facecake/precache-manifest.5f5a7768adc61a111f07c5216d134436.js",
+    "service-worker.js": "/facecake/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/facecake/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.d6c7a77e.chunk.js.LICENSE.txt": "/facecake/static/js/2.d6c7a77e.chunk.js.LICENSE.txt",
+    "static/media/att.png": "/facecake/static/media/att.c5929e50.png",
+    "static/media/bellhops.png": "/facecake/static/media/bellhops.b24b2dd2.png",
+    "static/media/facebook.svg": "/facecake/static/media/facebook.8c1add94.svg",
+    "static/media/fallingLine.svg": "/facecake/static/media/fallingLine.b1d2b40c.svg",
+    "static/media/heroToServices.svg": "/facecake/static/media/heroToServices.f28bdeed.svg",
+    "static/media/instagram.svg": "/facecake/static/media/instagram.231943ce.svg",
+    "static/media/lemonade.png": "/facecake/static/media/lemonade.9ee4f85e.png",
+    "static/media/privacyToSplit.svg": "/facecake/static/media/privacyToSplit.69ca2f93.svg",
+    "static/media/rightArrow.svg": "/facecake/static/media/rightArrow.0c276ddc.svg",
+    "static/media/risingLine.svg": "/facecake/static/media/risingLine.0b79eefe.svg",
+    "static/media/spectrum.png": "/facecake/static/media/spectrum.371e95e5.png",
+    "static/media/splitToFooter.svg": "/facecake/static/media/splitToFooter.ef2c2650.svg",
+    "static/media/twitter.svg": "/facecake/static/media/twitter.f91e88e6.svg",
+    "static/media/vivint.png": "/facecake/static/media/vivint.9a404416.png",
+    "static/media/whiteRightArrow.svg": "/facecake/static/media/whiteRightArrow.328390ff.svg",
+    "static/media/youtube.svg": "/facecake/static/media/youtube.cd6a666c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45518ebe.js",
+    "static/js/2.d6c7a77e.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.2e23eff9.chunk.js"
+  ]
+}
