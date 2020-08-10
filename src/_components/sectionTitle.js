@@ -16,9 +16,9 @@ const Line = styled.span`
   margin: 0 auto;
 `;
 
-export const SectionTitle = ({ number, title }) => {
+export const SectionTitle = ({ number, title, className }) => {
   return (
-    <Container>
+    <Container className={className}>
       <Text>{number}</Text> <Line /> <Text>{title}</Text>
     </Container>
   );

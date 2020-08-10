@@ -35,6 +35,7 @@ const AddressText = styled.input`
   border-bottom: 1px solid ${colors.darkGray};
   background-color: black;
   margin-right: 30px;
+  color: ${colors.darkGray};
 `;
 
 const AddressButton = styled.div`
@@ -51,6 +52,7 @@ const Arrow = styled.img`
 
 export const Hero = () => {
   return (
+    <>
     <Container>
       <MainText>
         Hi, we're Cake. <br />
@@ -66,5 +68,6 @@ export const Hero = () => {
         </AddressButton>
       </AddressRow>
     </Container>
+    </>
   );
 };

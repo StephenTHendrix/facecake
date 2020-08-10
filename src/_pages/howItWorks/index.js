@@ -13,6 +13,7 @@ import { NumberedCircle } from "./components/numberedCircle";
 const Container = styled.div`
   width: 100%;
   padding: 50px;
+  background-color: ${colors.parchment};
 `;
 
 const TopRow = styled.div`
