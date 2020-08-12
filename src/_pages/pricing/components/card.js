@@ -5,7 +5,6 @@ import { colors } from "_constants/styleConstants";
 import { InfoSubmitButton } from "./infoSubmitButton";
 
 const Container = styled.div`
-  ${({ hide }) => hide && 'display: none;'}
   background-color: white;
   text-align: center;
   color: ${colors.darkGray};
@@ -24,6 +23,11 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
+  font-size: 10px;
+  margin-bottom: 10px;
+`;
+
+const Detail = styled.div`
   font-size: 16px;
   margin-bottom: 40px;
 `;
@@ -44,21 +48,24 @@ const Divider = styled.hr`
   margin: 10px 0px;
 `;
 
-export const Card = ({ hide }) => {
+export const Card = ({ title, price, detail }) => {
   const [hover, setHover] = useState(false);
   const handleHover = () => {
     setHover(!hover);
   };
   return (
-    <Container onMouseEnter={handleHover} onMouseLeave={handleHover} hide={hide}>
-      <Title hover={hover}>Title Here</Title>
-      <Subtitle>Get 2 days/month</Subtitle>
+    <Container
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+    >
+      <Title hover={hover}>{title}</Title>
+      <Subtitle>Plans as low as</Subtitle>
       <PriceContainer hover={hover}>
-        <Price>$159</Price>
+        <Price>${price}</Price>
         <Time>/month</Time>
       </PriceContainer>
       <Divider />
-      <Subtitle>Text Text Text Text Text Text Text</Subtitle>
+      <Detail>{detail}</Detail>
       <InfoSubmitButton
         text="Get Started"
         color={hover ? colors.brand : colors.darkGray}

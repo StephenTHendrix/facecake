@@ -4,10 +4,10 @@ import styled from "styled-components";
 import { SectionTitle } from "_components/sectionTitle";
 import { colors } from "_constants/styleConstants";
 import { Circle } from "_components/circle";
-import rightArrow from '_images/rightArrow.svg';
+import rightArrow from "_images/rightArrow.svg";
 
 const Container = styled.div`
-  border-bottom: 1px solid ${colors.darkGray}
+  border-bottom: 1px solid ${colors.darkGray};
 `;
 
 const Heading = styled.div`
@@ -50,24 +50,23 @@ export const MainInfo = () => {
       <SectionTitle number="01" title="OUR SERVICES" />
       <Heading>Moving is a piece of cake&trade;</Heading>
       <Detail>
-        At Cake, we're all about connecting you and millions of others to the
-        best deals on internet, TV, home security, electricity, and more.
-        Helping you shop for home services is definitely what we do best, but
-        it's not all we do. <br />
+        To busy people who just want it done, Cake is the home service and
+        utility connector that is the fastest and most convenient way to connect
+        services & utilities for your home. <br />
         <br />
-        Cake is a free tool for home service shopping, sure, but it's also a
-        resource for learning how to make the most of those services. Read on to
-        discover who we are, what we do and how and why we do it.
+        Instantly connect electricity, internet, tv, smart home security,
+        insurance, water, gas, movers--basically everything you'll need for your
+        move.
       </Detail>
       <Divider />
       <LearnMoreRow>
-      <Circle color={colors.darkGray}/>
-      <TextColumn>
-      <LearnMoreText color={colors.darkGray}>
-        Interested in our values?
-      </LearnMoreText>
-      <LearnMoreText color="black">Learn more about the company <Arrow src={rightArrow} /></LearnMoreText>
-      </TextColumn>
+        <Circle color={colors.darkGray} />
+        <TextColumn>
+          <LearnMoreText color={colors.darkGray}>Ready?</LearnMoreText>
+          <LearnMoreText color="black">
+            Get started <Arrow src={rightArrow} />
+          </LearnMoreText>
+        </TextColumn>
       </LearnMoreRow>
     </>
   );

@@ -16,7 +16,7 @@ const Container = styled.div`
   background-color: ${colors.parchment};
 
   @media (max-width: ${deviceSize.tablet}px) {
-    padding: 30px;
+    padding: 20px;
   }
 `;
 
@@ -32,9 +32,11 @@ const BottomRow = styled.div`
 
 const TitleText = styled.div`
   width: 25%;
+  margin-right: 50px;
 
   @media (max-width: ${deviceSize.tablet}px) {
     width: initial;
+    margin-right: 10px;
   }
 `;
 
@@ -74,7 +76,8 @@ const CircleAndLine = styled.div`
 
 const Line = styled.img`
   height: 150px;
-  ${({ number }) => (number === '1' || number === '3') && 'position: relative; bottom: 40px;'};
+  ${({ number }) =>
+    (number === "1" || number === "3") && "position: relative; bottom: 40px;"};
 
   @media (max-width: ${deviceSize.tablet}px) {
     display: none;
@@ -84,27 +87,24 @@ const Line = styled.img`
 const circles = [
   {
     number: "1",
-    mainText: "Text Us",
-    detail:
-      "text text text text text text text text text text text text text text text text",
+    mainText: "Share",
+    detail: "Enter the service address and pick which services you want.",
   },
   {
     number: "2",
-    mainText: "Text Us",
+    mainText: "Compare",
     detail:
-      "text text text text text text text text text text text text text text text text",
+      "We instantly show you options from top providers to compare for free.",
   },
   {
     number: "3",
-    mainText: "Text Us",
-    detail:
-      "text text text text text text text text text text text text text text text text",
+    mainText: "Save",
+    detail: "Choose your favorites and secure the best rates in an instant.",
   },
   {
     number: "4",
-    mainText: "Text Us",
-    detail:
-      "text text text text text text text text text text text text text text text text",
+    mainText: "Enjoy",
+    detail: "Sit back and relax knowing you've tackled everything.",
   },
 ];
 
@@ -116,18 +116,18 @@ export const HowItWorks = () => {
       <TopRow>
         <TitleText>
           <SectionTitle number="02" title="HOW IT WORKS" />
-          <Subtext>Simple and handy rental process</Subtext>
+          <Subtext>Connect everything in minutes</Subtext>
         </TitleText>
         <div>
           <DetailText>
-            text text text text text text text text text text text text text
-            text text text text text text text text text text text text text
-            text text
+            Technology has made buying the right car, house - the right anything
+            really - super easy. Why would connecting home services & utilities
+            any different? Welcome to Cake--the modern way to get connected.
           </DetailText>
           <LearnMoreRow>
             <Circle color={colors.darkGray} />
             <LearnMoreText color="black">
-              Learn more about the company <Arrow src={rightArrow} />
+              Get started <Arrow src={rightArrow} />
             </LearnMoreText>
           </LearnMoreRow>
         </div>
@@ -136,12 +136,16 @@ export const HowItWorks = () => {
         {circles.map((circle) => {
           return (
             <>
-            <Card
-              number={circle.number}
-              mainText={circle.mainText}
-              detail={circle.detail}
-            />
-            {(circle.number === '1' || circle.number === '3') ? <Line number={circle.number} src={fallingLine} /> : circle.number === '2' && <Line src={risingLine} />}
+              <Card
+                number={circle.number}
+                mainText={circle.mainText}
+                detail={circle.detail}
+              />
+              {circle.number === "1" || circle.number === "3" ? (
+                <Line number={circle.number} src={fallingLine} />
+              ) : (
+                circle.number === "2" && <Line src={risingLine} />
+              )}
             </>
           );
         })}

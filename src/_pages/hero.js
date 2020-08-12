@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import rightArrow from "_images/rightArrow.svg";
 import { colors, deviceSize } from "_constants/styleConstants";
+import { ReactComponent as Logo } from '_images/logo.svg';
+import logo from '_images/logo.png';
 
 const Container = styled.div`
   background-color: black;
@@ -58,9 +60,9 @@ export const Hero = () => {
   return (
     <>
     <Container>
+      {/* <img src={logo} style={{height: "20px", backgroundColor: "white"}}/> */}
       <MainText>
-        Hi, we're Cake. <br />
-        The fastest, most convenient way to connect home services & utilities.
+        The easy way to connect home services & utilities.
       </MainText>
       <SubText>Compare options. Zero hassles. Instant everything.</SubText>
       <AddressRow>

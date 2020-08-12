@@ -33,16 +33,24 @@ const FlexRow = styled.div`
   align-items: center;
 `;
 
+const cards = [
+  {title: 'Electricity', price: '19', detail: 'Options for every lifestyle.',},
+  {title: 'Internet', price: '29', detail: 'Fastest streaming speeds.',},
+  {title: 'TV', price: '39', detail: 'Programming for everyone.',},
+  {title: 'Security', price: '19', detail: 'Smart home automation.',},
+  {title: 'Insurance', price: '5', detail: 'Protect what matters most.',},
+]
+
 export const Pricing = () => {
   return (
     <Container>
       <StyledSectionTitle number="04" title="Pricing" />
-      <Heading>Monthly plans for less than a parking space</Heading>
-      <Subheading>Text Text Text Text Text Text Text Text Text</Subheading>
+      <Heading>Enjoy the best deals.</Heading>
+      <Subheading>Exclusive rates and discounts you won't find anywhere else.</Subheading>
       <FlexRow>
-        <Card hide={isMobileDevice} />
-        <Card />
-        <Card hide={isMobileDevice} />
+        {isMobileDevice ? <Card title="Internet" price="29" detail="Fastest streaming speeds." /> : cards.map((card) => {
+          return <Card key={card.title} title={card.title} price={card.price} detail={card.detail}/>
+        })}
       </FlexRow>
     </Container>
   )

@@ -13,7 +13,7 @@ const Container = styled.div`
   bottom: 40px;
   left: 20px;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   font-size: 12px;
 `;
@@ -30,12 +30,14 @@ const Name = styled.div`
 export const ReviewCard = () => {
   return (
     <Container>
-      "Text Text Text Text Text Text Text Text Text Text Text Text Text" <br />
+      "The easiest move EVER! <br />
+      Where have you been all my life?"
+      <br />
       <br />
       <CircleRow>
         <Circle color="white" />
         <Name>
-        Jane Doe
+        Jordan L.
         </Name>
       </CircleRow>
     </Container>

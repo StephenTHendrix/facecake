@@ -6,6 +6,7 @@ import spectrum from "_images/companyLogos/spectrum.png";
 import lemonade from "_images/companyLogos/lemonade.png";
 import vivint from "_images/companyLogos/vivint.png";
 import bellhops from "_images/companyLogos/bellhops.png";
+import partners from '_images/partners.png';
 import { GlobalStyles } from "./globalStyles";
 import { Hero } from "./_pages/hero";
 import { Services } from "./_pages/services";
@@ -44,6 +45,11 @@ const Transition = styled.img`
   background-color: ${({ color }) => color};
 `;
 
+const Partners = styled.img`
+  max-width: 100%;
+  padding: 10px;
+`;
+
 const logos = [att, spectrum, lemonade, vivint, bellhops];
 
 function App() {
@@ -52,15 +58,7 @@ function App() {
       <GlobalStyles />
       <Hero />
       {/* <Transition src={heroToServices} color="white"/> */}
-      <LogoRow hide={isMobileDevice}>
-        {logos.map((logo) => {
-          return (
-            <LogoContainer>
-              <Logo src={logo} />
-            </LogoContainer>
-          );
-        })}
-      </LogoRow>
+      <Partners src={partners} />
       <Services />
       {/* <Transition src={splitToFooter} color="white"/> */}
       <HowItWorks />
