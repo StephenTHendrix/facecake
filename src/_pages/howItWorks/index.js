@@ -5,7 +5,7 @@ import rightArrow from "_images/rightArrow.svg";
 import risingLine from "_images/risingLine.svg";
 import fallingLine from "_images/fallingLine.svg";
 import { SectionTitle } from "_components/sectionTitle";
-import { colors } from "_constants/styleConstants";
+import { colors, deviceSize } from "_constants/styleConstants";
 import { Circle } from "_components/circle";
 import { Card } from "./components/card";
 import { NumberedCircle } from "./components/numberedCircle";
@@ -14,6 +14,10 @@ const Container = styled.div`
   width: 100%;
   padding: 50px;
   background-color: ${colors.parchment};
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    padding: 30px;
+  }
 `;
 
 const TopRow = styled.div`
@@ -28,6 +32,10 @@ const BottomRow = styled.div`
 
 const TitleText = styled.div`
   width: 25%;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    width: initial;
+  }
 `;
 
 const Subtext = styled.div`
@@ -37,6 +45,10 @@ const Subtext = styled.div`
 const DetailText = styled.div`
   color: ${colors.darkGray};
   width: 50%;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    width: initial;
+  }
 `;
 
 const LearnMoreRow = styled.div`
@@ -63,6 +75,10 @@ const CircleAndLine = styled.div`
 const Line = styled.img`
   height: 150px;
   ${({ number }) => (number === '1' || number === '3') && 'position: relative; bottom: 40px;'};
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    display: none;
+  }
 `;
 
 const circles = [

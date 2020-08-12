@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { colors } from '_constants/styleConstants';
 import { SectionTitle } from '_components/sectionTitle';
 import { Card } from './components/card';
+import { isMobileDevice } from '_helpers';
 
 const Container = styled.div`
   width: 100%;
@@ -39,9 +40,9 @@ export const Pricing = () => {
       <Heading>Monthly plans for less than a parking space</Heading>
       <Subheading>Text Text Text Text Text Text Text Text Text</Subheading>
       <FlexRow>
+        <Card hide={isMobileDevice} />
         <Card />
-        <Card />
-        <Card />
+        <Card hide={isMobileDevice} />
       </FlexRow>
     </Container>
   )

@@ -5,6 +5,7 @@ import { colors } from "_constants/styleConstants";
 import { InfoSubmitButton } from "./infoSubmitButton";
 
 const Container = styled.div`
+  ${({ hide }) => hide && 'display: none;'}
   background-color: white;
   text-align: center;
   color: ${colors.darkGray};
@@ -43,13 +44,13 @@ const Divider = styled.hr`
   margin: 10px 0px;
 `;
 
-export const Card = () => {
+export const Card = ({ hide }) => {
   const [hover, setHover] = useState(false);
   const handleHover = () => {
     setHover(!hover);
   };
   return (
-    <Container onMouseEnter={handleHover} onMouseLeave={handleHover}>
+    <Container onMouseEnter={handleHover} onMouseLeave={handleHover} hide={hide}>
       <Title hover={hover}>Title Here</Title>
       <Subtitle>Get 2 days/month</Subtitle>
       <PriceContainer hover={hover}>

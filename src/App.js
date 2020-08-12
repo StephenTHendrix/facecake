@@ -18,9 +18,10 @@ import heroToServices from '_images/heroToServices.svg';
 import privacyToSplit from '_images/privacyToSplit.svg';
 import splitToFooter from '_images/splitToFooter.svg';
 import { colors } from "_constants/styleConstants";
+import { isMobileDevice } from "_helpers";
 
 const LogoRow = styled.div`
-  display: flex;
+  display: ${({ hide }) => hide ? 'none' : 'flex'};
   align-items: center;
   background-color: white;
 `;
@@ -51,7 +52,7 @@ function App() {
       <GlobalStyles />
       <Hero />
       {/* <Transition src={heroToServices} color="white"/> */}
-      <LogoRow>
+      <LogoRow hide={isMobileDevice}>
         {logos.map((logo) => {
           return (
             <LogoContainer>

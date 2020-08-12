@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+
 import { NumberedCircle } from "./numberedCircle";
-import { colors } from "_constants/styleConstants";
+import { colors, deviceSize } from "_constants/styleConstants";
 
 const Container = styled.div`
   text-align: center;
   margin-top: ${({ number }) => (number === '2' || number === '4') && '30px'};
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    margin-top: 0px;
+  }
 `;
 
 const MainText = styled.div`

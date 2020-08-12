@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { SectionTitle } from "_components/sectionTitle";
-import { colors } from "_constants/styleConstants";
+import { colors, deviceSize } from "_constants/styleConstants";
 import att from "_images/companyLogos/att.png";
 import spectrum from "_images/companyLogos/spectrum.png";
 import lemonade from "_images/companyLogos/lemonade.png";
@@ -19,10 +19,19 @@ const TopRow = styled.div`
   display: flex;
   margin-left: 50px;
   margin-bottom: 50px;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    margin: 0 auto;
+  }
 `;
 
 const TitleText = styled.div`
   width: 33%;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    width: initial;
+    padding: 10px;
+  }
 `;
 
 const Heading = styled.div`
@@ -47,10 +56,18 @@ const LogoContainer = styled.div`
   flex: 1;
   border: 1px dotted ${colors.darkGray};
   height: 200px;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    height: 100px;
+  }
 `;
 
 const Logo = styled.img`
   max-height: 50px;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    max-height: 2.5vh;
+  }
 `;
 
 const logos = [att, spectrum, lemonade, vivint, bellhops];

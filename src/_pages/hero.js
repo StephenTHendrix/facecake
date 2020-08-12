@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import rightArrow from "_images/rightArrow.svg";
-import { colors } from "_constants/styleConstants";
+import { colors, deviceSize } from "_constants/styleConstants";
 
 const Container = styled.div`
   background-color: black;
@@ -10,6 +10,10 @@ const Container = styled.div`
   width: 100%;
   text-align: left;
   padding: 100px;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    padding: 30px;
+  }
 `;
 
 const MainText = styled.div`
