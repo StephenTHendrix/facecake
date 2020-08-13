@@ -80,9 +80,9 @@ const CircleAndLine = styled.div`
 `;
 
 const Line = styled.img`
-  height: 150px;
+  height: 100px;
   ${({ number }) =>
-    (number === "1" || number === "3") && "position: relative; bottom: 40px;"};
+    (number === "1" || number === "3") && "position: relative; bottom: 15px;"};
 
   @media (max-width: ${deviceSize.tablet}px) {
     display: none;
