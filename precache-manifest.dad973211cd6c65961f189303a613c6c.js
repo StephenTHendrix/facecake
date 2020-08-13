@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16c942c2261a8ebf2ed9de05eac36973",
+    "revision": "7a0f6c6b60adec98582d86c0d882f586",
     "url": "/facecake/index.html"
   },
   {
-    "revision": "5358f36f4b3eeb6fe1c7",
+    "revision": "9ded0db31ce7adec3e21",
     "url": "/facecake/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/facecake/static/js/2.f996b440.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5358f36f4b3eeb6fe1c7",
-    "url": "/facecake/static/js/main.a26c6da2.chunk.js"
+    "revision": "9ded0db31ce7adec3e21",
+    "url": "/facecake/static/js/main.3d0eb700.chunk.js"
   },
   {
     "revision": "f55f2cf64389ac517598",
