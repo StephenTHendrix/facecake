@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import rightArrow from "_images/rightArrow.svg";
 import { colors, deviceSize } from "_constants/styleConstants";
-import { ReactComponent as Logo } from '_images/logo.svg';
-import logo from '_images/logo.png';
+import { ReactComponent as Logo } from "_images/logo.svg";
+import logo from "_images/logo.png";
 
 const Container = styled.div`
   background-color: black;
@@ -36,7 +36,7 @@ const AddressRow = styled.div`
 `;
 
 const AddressText = styled.input`
-  width: 50%;
+  width: 25%;
   border: none;
   border-bottom: 1px solid ${colors.darkGray};
   background-color: black;
@@ -59,21 +59,21 @@ const Arrow = styled.img`
 export const Hero = () => {
   return (
     <>
-    <Container>
-      {/* <img src={logo} style={{height: "20px", backgroundColor: "white"}}/> */}
-      <MainText>
-        The easy way to connect home services & utilities.
-      </MainText>
-      <SubText>Compare options. Zero hassles. Instant everything.</SubText>
-      <AddressRow>
-        <AddressText placeholder="Enter your address..." />
-        <AddressButton>
-          <ButtonText>Start</ButtonText>
-            {" "}
-            <Arrow src={rightArrow} />
-        </AddressButton>
-      </AddressRow>
-    </Container>
+      <Container>
+        {/* <img src={logo} style={{height: "20px", backgroundColor: "white"}}/> */}
+        <MainText>
+          The easy way to connect
+          <br />
+          home services & utilities.
+        </MainText>
+        <SubText>Compare options. Zero hassles. Instant everything.</SubText>
+        <AddressRow>
+          <AddressText placeholder="Enter your address..." />
+          <AddressButton>
+            <ButtonText>Start</ButtonText> <Arrow src={rightArrow} />
+          </AddressButton>
+        </AddressRow>
+      </Container>
     </>
   );
 };

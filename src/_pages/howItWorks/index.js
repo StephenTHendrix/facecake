@@ -12,7 +12,7 @@ import { NumberedCircle } from "./components/numberedCircle";
 
 const Container = styled.div`
   width: 100%;
-  padding: 50px;
+  padding: 100px;
   background-color: ${colors.parchment};
 
   @media (max-width: ${deviceSize.tablet}px) {

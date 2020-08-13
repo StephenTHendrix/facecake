@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "_constants/styleConstants";
 
+import star from '_images/star.svg'
+import { colors } from "_constants/styleConstants";
 import { Circle } from "_components/circle";
 
 const Container = styled.div`
@@ -25,6 +26,11 @@ const CircleRow = styled.div`
 
 const Name = styled.div`
   margin-left: 20px;
+  margin-right: 50px;
+`;
+
+const Star = styled.img`
+  height: 15px;
 `;
 
 export const ReviewCard = () => {
@@ -39,6 +45,11 @@ export const ReviewCard = () => {
         <Name>
         Jordan L.
         </Name>
+      <Star src={star} />
+      <Star src={star} />
+      <Star src={star} />
+      <Star src={star} />
+      <Star src={star} />
       </CircleRow>
     </Container>
   );

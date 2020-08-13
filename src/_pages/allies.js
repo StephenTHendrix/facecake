@@ -25,7 +25,7 @@ import stateFarm from "_images/companyLogos/grayStateFarm.png";
 const Container = styled.div`
   width: 100%;
   background-color: white;
-  padding-bottom: 50px;
+  padding: 50px;
 `;
 
 const TopRow = styled.div`

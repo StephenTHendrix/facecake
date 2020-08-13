@@ -9,7 +9,7 @@ const Container = styled.div`
   width: 100%;
   background-color: ${colors.parchment};
   text-align: center;
-  padding-bottom: 25px;
+  padding: 25px;
 `;
 
 const StyledSectionTitle = styled(SectionTitle)`

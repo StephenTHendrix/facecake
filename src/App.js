@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
+import { Curve } from "_components/curve";
 import att from "_images/companyLogos/att.png";
 import spectrum from "_images/companyLogos/spectrum.png";
 import lemonade from "_images/companyLogos/lemonade.png";
@@ -15,9 +16,6 @@ import { Allies } from "_pages/allies";
 import { Pricing } from "_pages/pricing";
 import { Footer } from "_pages/footer";
 
-import heroToServices from '_images/heroToServices.svg';
-import privacyToSplit from '_images/privacyToSplit.svg';
-import splitToFooter from '_images/splitToFooter.svg';
 import { colors } from "_constants/styleConstants";
 import { isMobileDevice } from "_helpers";
 
@@ -40,8 +38,7 @@ const Logo = styled.img`
 `;
 
 const Transition = styled.img`
-  width: 100%;
-  height: 40px;
+  width: 100vw;
   background-color: ${({ color }) => color};
 `;
 
@@ -52,18 +49,26 @@ const Partners = styled.img`
 
 const logos = [att, spectrum, lemonade, vivint, bellhops];
 
-function App() {
+const StyledCurve = styled(Curve)`
+  display: block;
+  ${({ toFooter }) => toFooter && 'background-color: black;'}
+`;
+
+function App({ className }) {
   return (
     <div>
       <GlobalStyles />
       <Hero />
-      {/* <Transition src={heroToServices} color="white"/> */}
+      <StyledCurve color="black" className={className}/>
       <Partners src={partners} />
       <Services />
-      {/* <Transition src={splitToFooter} color="white"/> */}
+      <StyledCurve color={colors.parchment} straightOnBottom className={className}/>
       <HowItWorks />
+      <StyledCurve color={colors.parchment} className={className}/>
       <Allies />
+      <StyledCurve color={colors.parchment} straightOnBottom className={className}/>
       <Pricing />
+      <StyledCurve color={colors.parchment} toFooter className={className}/>
       <Footer />
     </div>
   );
