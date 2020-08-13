@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a22d3404218782a9ff760c1d05271674",
+    "revision": "16c942c2261a8ebf2ed9de05eac36973",
     "url": "/facecake/index.html"
   },
   {
-    "revision": "b0911285755dd8c813ec",
+    "revision": "5358f36f4b3eeb6fe1c7",
     "url": "/facecake/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "0bc680dde6449dd72334",
-    "url": "/facecake/static/js/2.50cecba2.chunk.js"
+    "revision": "7c757c2ec5854643c497",
+    "url": "/facecake/static/js/2.f996b440.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/facecake/static/js/2.50cecba2.chunk.js.LICENSE.txt"
+    "url": "/facecake/static/js/2.f996b440.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0911285755dd8c813ec",
-    "url": "/facecake/static/js/main.d55ce8b7.chunk.js"
+    "revision": "5358f36f4b3eeb6fe1c7",
+    "url": "/facecake/static/js/main.a26c6da2.chunk.js"
   },
   {
     "revision": "f55f2cf64389ac517598",
@@ -76,10 +76,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/facecake/static/media/grayXfinity.c770340f.png"
   },
   {
-    "revision": "f28bdeedf387dbc08b171b19e12bf0e6",
-    "url": "/facecake/static/media/heroToServices.f28bdeed.svg"
-  },
-  {
     "revision": "231943cef6a46d945790b4d55c019229",
     "url": "/facecake/static/media/instagram.231943ce.svg"
   },
@@ -88,16 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/facecake/static/media/lemonade.9ee4f85e.png"
   },
   {
-    "revision": "f9d51f37c0918c92f3f88e4472d8484c",
-    "url": "/facecake/static/media/logo.f9d51f37.svg"
+    "revision": "80b0e4e55d55c677bda19a4ab887f65c",
+    "url": "/facecake/static/media/logo.80b0e4e5.svg"
   },
   {
     "revision": "5d6b1ed0e4991c352aba2b2589770077",
     "url": "/facecake/static/media/partners.5d6b1ed0.png"
-  },
-  {
-    "revision": "69ca2f938204dbd3aa7279c26cd6bda5",
-    "url": "/facecake/static/media/privacyToSplit.69ca2f93.svg"
   },
   {
     "revision": "0c276ddc006844e8781465b158ee9d40",
@@ -112,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/facecake/static/media/spectrum.371e95e5.png"
   },
   {
-    "revision": "ef2c2650e9f6ab1adf9f85493ad25695",
-    "url": "/facecake/static/media/splitToFooter.ef2c2650.svg"
+    "revision": "5d2fe55f165b63239076c6fd2da6575d",
+    "url": "/facecake/static/media/star.5d2fe55f.svg"
   },
   {
     "revision": "f91e88e6c6ee8abf26fcb5be6e08cf3c",
