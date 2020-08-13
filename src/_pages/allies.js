@@ -48,8 +48,13 @@ const TitleText = styled.div`
 `;
 
 const Heading = styled.div`
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: bold;
   margin-top: 20px;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    font-size: 32px;
+  }
 `;
 
 const Subheading = styled.div`

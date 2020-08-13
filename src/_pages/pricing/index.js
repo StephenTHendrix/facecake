@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '_constants/styleConstants';
+import { colors, deviceSize } from '_constants/styleConstants';
 import { SectionTitle } from '_components/sectionTitle';
 import { Card } from './components/card';
 import { isMobileDevice } from '_helpers';
@@ -17,8 +17,13 @@ const StyledSectionTitle = styled(SectionTitle)`
 `;
 
 const Heading = styled.div`
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: bold;
   padding: 20px;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    font-size: 32px;
+  }
 `;
 
 const Subheading = styled.div`

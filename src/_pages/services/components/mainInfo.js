@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { SectionTitle } from "_components/sectionTitle";
-import { colors } from "_constants/styleConstants";
+import { colors, deviceSize } from "_constants/styleConstants";
 import { Circle } from "_components/circle";
 import rightArrow from "_images/rightArrow.svg";
 
@@ -11,7 +11,12 @@ const Container = styled.div`
 `;
 
 const Heading = styled.div`
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: bold;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    font-size: 32px;
+  }
 `;
 
 const Detail = styled.div`

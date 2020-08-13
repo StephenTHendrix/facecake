@@ -41,7 +41,12 @@ const TitleText = styled.div`
 `;
 
 const Subtext = styled.div`
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: bold;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    font-size: 32px;
+  }
 `;
 
 const DetailText = styled.div`

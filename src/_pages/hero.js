@@ -19,7 +19,12 @@ const Container = styled.div`
 `;
 
 const MainText = styled.div`
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: bold;
+
+  @media (max-width: ${deviceSize.tablet}px) {
+    font-size: 32px;
+  }
 `;
 
 const SubText = styled.div`
